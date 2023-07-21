@@ -42,7 +42,8 @@ Users should be able to:
 
 ### What I learned
 
-This project helped me to better understand how Flexbox works, when to use it, and when it's best to write your own custom CSS.
+- This project helped me to better understand how Flexbox works, when to use it, and when it's best to write your own custom CSS.
+- I also learned the real value of using a CSS Reset stylesheet ;)
 
 ### Continued development
 
