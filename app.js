@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const ratingContainer = document.querySelector('#rating-container');
 const thanksContainer = document.querySelector('#ty-container');
-const confMsg = document.querySelector('#conf-msg');
+const confMsg = document.querySelector('.conf-msg');
 
 
 form.addEventListener('submit', (e) => {

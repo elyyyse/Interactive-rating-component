@@ -13,88 +13,101 @@ body {
 }
 
 .container {
-    /* margin: auto; */
-    padding: 25px;
-    width: 275px;
-    background-color: hsl(213, 19%, 18%);
-    border-radius: 5%;
+    background: radial-gradient(#232A34, #181E27);
+    border-radius: 15px;
+    width: 279px;
 }
 
-/* #ty-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-} */
+#rating-container {
+    padding: 24px 24px 32px;
+}
+
+#ty-container {
+    padding: 34px 24px 37px;
+}
 
 .icon-container {
-    /* background-color: hsl(216, 12%, 54%); */
-    background-color: hsl(213, 19%, 23%);
+    background-color: hsl(213, 19%, 18%);
     border-radius: 100%;
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 19px;
 }
 
 .icon-star {
-    width: 15px;
-}
-
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    width: 14px;
 }
 
 h2 {
     color: hsl(0, 0%, 100%);
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2.ty-msg {
+    text-align: center;
+    margin-top: 25px;
 }
 
 p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 22px;
     color: hsl(217, 12%, 63%);
+    margin-top: 20px;
 }
 
-#conf-msg {
+p.ty-msg {
+    text-align: center;
+}
+
+#conf-container {
+    width: 144px;
+    height: 22px;
+    padding: 5px 12px;
+    margin: 25px auto 0;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.conf-msg {
     color: hsl(25, 97%, 53%);
-    background-color: hsl(213, 19%, 23%);
-    text-align: center;
-    /* vertical-align: center; */
-    width: fit-content;
-    margin: 25px auto;
-    padding: 8px 15px;
-    border-radius: 2em;
-}
-
-.ty-msg {
-    text-align: center;
-    margin-top: -7px;
+    margin: 0;
 }
 
 input[type="radio"] {
     display: none;
 }
 
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
 .rate-select {
-    /* background-color: hsl(216, 12%, 54%); */
-    background-color: hsl(213, 19%, 23%);
+    background-color: hsl(213, 19%, 18%);
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    color: hsl(217, 12%, 63%);
-    font-size: 13px;
+    width: 42px;
+    height: 42px;
+    color: hsl(216, 12%, 54%);
+    font-size: 14px;
+    font-weight: 700;
+    /* line-height: 24px;
+    letter-spacing: 0.17px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .rate-select:hover {
-    background-color: hsl(217, 12%, 63%);
+    background-color: hsl(216, 12%, 54%);
     color: hsl(0, 0%, 100%);
 }
 
@@ -106,16 +119,16 @@ input[type=radio]:checked+label {
 #submit {
     display: block;
     border: none;
-    margin-top: 25px;
+    margin-top: 24px;
     width: 100%;
     height: 45px;
     font-family: Overpass;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: .1em;
+    letter-spacing: 1.87px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
-    border-radius: 2em;
+    border-radius: 22.5px;
 }
 
 #submit:hover {
@@ -126,6 +139,7 @@ input[type=radio]:checked+label {
 #ty-illo {
     margin: 0 auto;
     display: block;
+    width: 144px;
 }
 
 #attribution {
@@ -137,4 +151,76 @@ input[type=radio]:checked+label {
 
 #attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 460px) {
+    #rating-container {
+        padding: 32px 39px 32px 32px;
+        width: 341px;
+        border-radius: 30px;
+    }
+
+    .icon-container {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 35px;
+    }
+
+    .icon-star {
+        width: 17px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h2.ty-msg {
+        margin-top: 36px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    p.ty-msg {
+        margin: 18px 0 0;
+    }
+
+    .rate-select {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+        /* letter-spacing: 0.2px; */
+    }
+
+    #submit {
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 32px;
+    }
+
+    #ty-container {
+        padding: 45px 40px 45px 32px;
+        width: 340px;
+        border-radius: 30px;
+    }
+
+    #ty-illo {
+        width: 162px;
+    }
+
+    #conf-container {
+        width: 153px;
+        height: 24px;
+        padding: 4px 20px;
+        margin-top: 32px;
+    }
+
+    p.conf-msg {
+        margin: 0;
+        font-size: 14.75px;
+    }
+
 }
