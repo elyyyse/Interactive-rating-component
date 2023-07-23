@@ -17,59 +17,60 @@
 </head>
 
 <body>
-  <div id="wrapper">
-    <div class="container" id="rating-container">
-      <!-- Rating state start -->
-      <div class="icon-container">
-        <img class="icon-star" src="./images/icon-star.svg" alt="Orange star">
+  <main>
+    <div id="wrapper">
+      <div class="container" id="rating-container">
+        <!-- Rating state start -->
+        <div class="icon-container">
+          <img class="icon-star" src="./images/icon-star.svg" alt="Orange star">
+        </div>
+
+        <h2>How did we do?</h2>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!</p>
+        <form>
+          <section class="input-container">
+            <input type="radio" name="rating" value="1" id="rating-1" required>
+            <label for="rating-1" class="rate-select">1</label>
+
+            <input type="radio" name="rating" value="2" id="rating-2" required>
+            <label for="rating-2" class="rate-select">2</label>
+
+            <input type="radio" name="rating" value="3" id="rating-3" required>
+            <label for="rating-3" class="rate-select">3</label>
+
+            <input type="radio" name="rating" value="4" id="rating-4" required>
+            <label for="rating-4" class="rate-select">4</label>
+
+            <input type="radio" name="rating" value="5" id="rating-5" required>
+            <label for="rating-5" class="rate-select">5</label>
+          </section>
+          <button type="submit" id="submit">SUBMIT</button>
+        </form>
+        <!-- Rating state end -->
       </div>
+      <div class="container hidden" id="ty-container">
+        <!-- Thank you state start -->
+        <img src="./images/illustration-thank-you.svg" alt="" id="ty-illo">
 
-      <h2>How did we do?</h2>
+        <div id="conf-container">
+          <p class="conf-msg">You selected <span>4</span> out of 5</p>
+        </div>
+        <h2 class="ty-msg">Thank you!</h2>
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-        offering!</p>
-      <form>
-        <section class="input-container">
-          <input type="radio" name="rating" value="1" id="rating-1" required>
-          <label for="rating-1" class="rate-select">1</label>
-
-          <input type="radio" name="rating" value="2" id="rating-2" required>
-          <label for="rating-2" class="rate-select">2</label>
-
-          <input type="radio" name="rating" value="3" id="rating-3" required>
-          <label for="rating-3" class="rate-select">3</label>
-
-          <input type="radio" name="rating" value="4" id="rating-4" required>
-          <label for="rating-4" class="rate-select">4</label>
-
-          <input type="radio" name="rating" value="5" id="rating-5" required>
-          <label for="rating-5" class="rate-select">5</label>
-        </section>
-        <button type="submit" id="submit">SUBMIT</button>
-      </form>
-      <!-- Rating state end -->
-    </div>
-    <div class="container hidden" id="ty-container">
-      <!-- Thank you state start -->
-      <img src="./images/illustration-thank-you.svg" alt="" id="ty-illo">
-
-      <div id="conf-container">
-        <p class="conf-msg">You selected <span>4</span> out of 5</p>
+        <p class="ty-msg">We appreciate you taking the time to give a rating. If you ever need more support, don’t
+          hesitate
+          to get in touch!</p>
+        <!-- Thank you state end -->
       </div>
-      <h2 class="ty-msg">Thank you!</h2>
-
-      <p class="ty-msg">We appreciate you taking the time to give a rating. If you ever need more support, don’t
-        hesitate
-        to get in touch!</p>
-      <!-- Thank you state end -->
+      <footer id="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.elysekan.com">Elyse Kanagaratnam</a>.
+      </footer>
     </div>
-
-    <footer id="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.elysekan.com">Elyse Kanagaratnam</a>.
-    </footer>
-  </div>
-  <script src="appV2.js"></script>
+    <script src="app.js"></script>
+  </main>
 </body>
 
 </html>
