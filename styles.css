@@ -1,11 +1,6 @@
 body {
     font-family: Overpass;
     background-color: hsl(216, 12%, 8%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .hidden {
@@ -13,7 +8,10 @@ body {
 }
 
 #wrapper {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -151,7 +149,6 @@ input[type=radio]:checked+label {
     font-size: 11px;
     color: hsl(217, 12%, 63%);
     text-align: center;
-    /* margin-top: 10px; */
     position: absolute;
     bottom: 10px;
 }
