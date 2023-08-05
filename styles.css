@@ -1,19 +1,22 @@
 body {
     font-family: Overpass;
     background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    position: relative;
 }
 
 .hidden {
     display: none;
 }
 
-#wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* #wrapper {
+    
+} */
 
 .container {
     background: radial-gradient(#232A34, #181E27);
