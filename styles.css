@@ -1,3 +1,7 @@
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     font-family: Overpass;
     background-color: hsl(216, 12%, 8%);
@@ -13,10 +17,6 @@ body {
 .hidden {
     display: none;
 }
-
-/* #wrapper {
-    
-} */
 
 .container {
     background: radial-gradient(#232A34, #181E27);
