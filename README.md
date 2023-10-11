@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Continued development
 
-I built this using basic JS, but I intend to learn React once I've nailed down the fundamentals.
+I built this using VanillaJS, but I intend to learn React once I've nailed down the fundamentals.
 
 ### Useful resources
 
